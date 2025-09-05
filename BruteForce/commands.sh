@@ -1,0 +1,3 @@
+rm -f "output.txt"; START_TIME=$(date +%s); hashcat -m 0 -a 3 hash.txt ?l?l?l?l?l -o output.txt --show; cat output.txt; END_TIME=$(date +%s); DURATION=$((END_TIME - START_TIME)); echo "Duration: $DURATION seconds"
+rm -f "output.txt"; START_TIME=$(date +%s); hashcat -m 0 -a 3 hash.txt ?l?l?l?l?l?l?l?l -o output.txt; cat output.txt; END_TIME=$(date +%s); DURATION=$((END_TIME - START_TIME)); echo "Duration: $DURATION seconds"
+rm -f "output.txt"; START_TIME=$(date +%s); hashcat -m 0 -a 3 hash.txt ?a?a?a?a?a?a?a?a -o output.txt; cat output.txt; END_TIME=$(date +%s); DURATION=$((END_TIME - START_TIME)); echo "Duration: $DURATION seconds"
